@@ -60,9 +60,7 @@ client.connect(err => {
             // res.redirect('/')
           })
     
-        //  const id = ObjectID(req.params.id);
-        //  eventCollection.findOneAndDelete({_id: id})
-        //  .then(documents => res.send(!!documents.value))
+        
       })
 
     app.post('/addBook', (req, res) => {
@@ -86,15 +84,7 @@ client.connect(err => {
     })
 });
 
-// client.connect(err => {
-//     const orderCollection = client.db("bookShop").collection("orders");
-//     console.log('db connected');
 
-//     app.post('/addOrder', (req, res) => {
-//         const newOrdering = req.body;
-//         console.log(newOrdering);
-//     })
-// });
 
 
 app.listen(port, () => {
